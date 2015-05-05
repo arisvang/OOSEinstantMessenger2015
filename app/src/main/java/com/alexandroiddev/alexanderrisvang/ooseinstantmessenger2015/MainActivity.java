@@ -127,7 +127,7 @@ public class MainActivity extends Activity {
             } catch (IOException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
-                message += "Something wrong! " + e.toString() + "\n";
+                message += "Something wrong IO! " + e.toString() + "\n";
             }
 
             MainActivity.this.runOnUiThread(new Runnable() {
@@ -166,7 +166,7 @@ public class MainActivity extends Activity {
         } catch (SocketException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
-            ip += "Something Wrong! " + e.toString() + "\n";
+            ip += "Something Wrong SE! " + e.toString() + "\n";
         }
 
         return ip;
